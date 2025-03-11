@@ -1,13 +1,12 @@
 import type React from "react"
+import Navbar from "@/components/navbar"
+import { ThemeProvider } from "@/components/theme-provider"
+import "@/app/globals.css"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import "./globals.css"
-
-const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Leili | Creative Technologist & Data Enthusiast",
-  description: "Portfolio of Leili, a creative technologist and data enthusiast",
+  title: "Leili Manafi",
+  description: "Creative Technologist & Data Enthusiast",
 }
 
 export default function RootLayout({
@@ -17,7 +16,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <ThemeProvider attribute="class" defaultTheme="dark">
+          <Navbar />
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   )
 }

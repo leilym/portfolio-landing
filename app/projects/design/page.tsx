@@ -47,6 +47,14 @@ export default function DesignProjectsPage() {
       color: "#87CEEB",
       image: "/portfolio.png?height=600&width=600",
       year: "2023-present",
+    },
+    {
+      title: "Personal Art",
+      subtitle: "illustrations & digital art",
+      description: "art pieces I have created using ProCreate and Figma",
+      color: "#87CEEB",
+      image: "/artpiece1.JPG?height=600&width=600",
+      year: "2024-present",
     }
   ]
 

@@ -17,7 +17,7 @@ export default function DesignProjectsPage() {
 
   const projects = [
     {
-      title: "delNevis",
+      title: "DelNevis",
       subtitle: " Website Prototype",
       description: "a website designed for Iranian teenagers to share their creative writing to create a safe space for healing through art/writing.",
       color: "#FF9EB5",
@@ -30,32 +30,24 @@ export default function DesignProjectsPage() {
         description: "Mobile app designed from scratch for a startup (pegasusprep.education)",
         color: "#FFDFBA",
         image: "/pegasus.png?height=600&width=600",
-        year: "2023",
+        year: "2025",
       },
     {
-        title: "tell me",
-        subtitle: "audio journaling app",
-        description: "UX/UI design for a mobile journaling application",
+        title: "Tell Me",
+        subtitle: "audio journaling ai bot",
+        description: "an audio journaling ai bot that uses NLP, reinforced learning & Brene Brown's research to become your favorite voice journal ",
         color: "#FFDFBA",
-        image: "/placeholder.svg?height=600&width=600",
-        year: "2023",
+        image: "/tellme.png?height=600&width=600",
+        year: "2022",
       },
     {
-      title: "personal",
-      subtitle: "Portfolio",
-      description: "Portfolio website design and development",
+      title: "Personal Portfolio",
+      subtitle: "portfolio website",
+      description: "evolution of my personal portfolio design and my reflections from it",
       color: "#87CEEB",
-      image: "/placeholder.svg?height=600&width=600",
-      year: "2022",
-    },
-    {
-      title: "personal",
-      subtitle: "art",
-      description: "Collection of digital illustrations and artwork",
-      color: "#D8BFD8",
-      image: "/placeholder.svg?height=600&width=600",
-      year: "2021",
-    },
+      image: "/portfolio.png?height=600&width=600",
+      year: "2023-present",
+    }
   ]
 
   return (
@@ -63,8 +55,9 @@ export default function DesignProjectsPage() {
       {/* Navigation */}
       <div className="fixed top-8 left-8 z-50">
         <Link
-          href="/#projects"
+          href="/#explore"
           className="flex items-center gap-2 text-white/60 hover:text-white transition-colors group"
+          scroll={true}
         >
           <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" />
           <span className="text-sm">Back</span>

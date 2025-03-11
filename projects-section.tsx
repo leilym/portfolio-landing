@@ -25,19 +25,20 @@ export default function ProjectsSection() {
 
   return (
     <div
-      className="h-full w-full flex flex-col items-center justify-center p-8 relative"
+      className="min-h-screen w-full flex flex-col items-center justify-center relative"
       style={{
         backgroundImage: "url('/abstractArt.JPG')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
+        backgroundAttachment: "fixed", // This helps with smooth scrolling
       }}
     >
       {/* Add a subtle gradient overlay to enhance the background without making it hazy */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/50 z-0" />
 
       <motion.div
-        className="relative z-10 flex flex-col items-center justify-center w-full max-w-5xl"
+        className="relative z-10 flex flex-col items-center justify-center w-full max-w-5xl p-8"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}

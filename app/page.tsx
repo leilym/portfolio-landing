@@ -36,7 +36,7 @@ export default function PortfolioLanding() {
   return (
     <div ref={containerRef} className="relative w-full h-[200vh] overflow-x-hidden bg-white text-black">
       {/* First section - Landing */}
-      <motion.div className="sticky top-0 h-screen w-full overflow-hidden" style={{ opacity, scale, y }}>
+      <motion.div className="sticky top-0 min-h-screen w-full overflow-hidden" style={{ opacity, scale, y }}>
         <BackgroundElements mousePosition={mousePosition} />
 
         <div className="relative z-10 flex h-full w-full flex-col items-center justify-center px-4">
@@ -72,9 +72,9 @@ export default function PortfolioLanding() {
       </motion.div>
 
       {/* Second section - Projects */}
-      <motion.div className="sticky top-0 h-screen w-full" style={{ opacity: projectsOpacity, y: projectsY }}>
+      <motion.section id="explore" id="explore" className="min-h-screen">
         <ProjectsSection />
-      </motion.div>
+      </motion.section>
     </div>
   )
 }

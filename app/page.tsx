@@ -6,6 +6,7 @@ import { MousePointer2, ArrowDown } from "lucide-react"
 import InteractiveText from "../interactive-text"
 import BackgroundElements from "../background-elements"
 import ProjectsSection from "../projects-section"
+import { Analytics } from "@vercel/analytics/next"
 
 export default function PortfolioLanding() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })

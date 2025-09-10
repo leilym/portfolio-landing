@@ -12,7 +12,7 @@ export default function ProjectsSection() {
     {
       id: "data",
       title: "Data Projects",
-      description: "Explore my analytical work",
+      description: "In Progress",
       href: "/projects/data",
     },
     {

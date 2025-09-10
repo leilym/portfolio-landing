@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-black text-white p-8">
-      <Link href="/" className="flex items-center gap-2 text-white/70 hover:text-white transition-colors mb-8">
+      <Link href="/#projects" className="flex items-center gap-2 text-white/70 hover:text-white transition-colors mb-8">
         <ArrowLeft className="h-4 w-4" />
         <span>Back to home</span>
       </Link>
@@ -22,7 +22,7 @@ export default function AboutPage() {
 
         <div className="prose prose-lg prose-invert">
           <p>
-            Hi, I'm Leili. I'm a Creative Technologist with a passion for combining art, humanity, and
+            Hi, I'm Leili. I'm a Creative Technologist with a passion for combining art, humanities, and
             technology.
           </p> 
 
@@ -36,15 +36,15 @@ export default function AboutPage() {
           <p>
           My career began at OneReach.ai as a Solutions Analyst, but after being laid off, I pivoted into teaching; spending a year guiding students through AP Computer Science Principles. 
           <br></br>
-          Today, I am part of the Implementation team at Intapp DealCloud.
+          Today, I am part of the Implementation team at <a href="https://www.intapp.com/dealcloud/">Intapp DealCloud</a>.
           <br></br>
           Alongside my professional work, I am passionate about art, community, and impact. 
-          I have volunteered for several years as part of the UWC Selection process, helping students embark on their own transformative journeys.
+          I have volunteered for several years as part of the <a href="https://uwc.org">UWC</a> Selection process, helping students embark on their own transformative journeys.
           <br></br>Right now, I am exploring my passion for art through digital illustration and writing, using creativity to spark connection and reflection. <br></br>
-          <br></br>You can find my artwork at: <p style={{ color: '#DFC98A' }}>https://www.instagram.com/art.from.themundane/</p>
-          <br></br>My blogs at: <p style={{ color: '#DFC98A' }}> https://medium.com/@leyli-s-life-drafts </p>
+          <br></br>You can find my artwork at: <p style={{ color: '#DFC98A' }}><a href="https://www.instagram.com/art.from.themundane/">instagram.com/@art.from.themundane/</a></p>
+          <br></br>My blogs at: <p style={{ color: '#DFC98A' }}> <a href="https://medium.com/@leyli-s-life-drafts"> medium.com/@leyli-s-life-drafts </a> </p>
 
-
+          <br></br> Thanks for visiting!
           </p>
           
         </div>
